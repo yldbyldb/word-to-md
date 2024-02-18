@@ -1,1 +1,1 @@
-aspose-words==24.2
+aspose-words
