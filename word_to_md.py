@@ -7,14 +7,14 @@ import re
 import os
 
 def remove_anchor_tags(filename):
-    # 读取文件内容
+    # read the file content
     with open(filename, 'r') as file:
         content = file.read()
 
-    # 使用正则表达式删除匹配的内容
+    # to find and remove the anchor tags
     cleaned_content = re.sub(r'<a name=".*?"></a>', '', content)
 
-    # 将处理后的内容写回文件
+    # rewrite the file content
     with open(filename, 'w') as file:
         file.write(cleaned_content)
 
