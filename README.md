@@ -1,12 +1,9 @@
 ```bash
-# set up the virtual env
-$ python3 -m venv venv
-
-# active the venv
-$ source venv/bin/activate
+# switch to 3.11.8
+$ pyenv shell 3.11.8
 
 # install the dependencies
-$ pip3 install -r requirements.txt
+$ pip3 install aspose-words
 
 # run the python script
 $ python word_to_md.py
